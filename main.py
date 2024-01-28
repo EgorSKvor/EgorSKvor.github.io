@@ -10,9 +10,6 @@ bot = Bot(token=TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
-author_name = 'Егор'
-
-
 # @dp.message_handler()
 # async def hello_func(message: Message):
 #     print(message.message_id, message.text)
@@ -21,9 +18,10 @@ author_name = 'Егор'
 
 @dp.message_handler(commands='start')
 async def start_web_app(message: Message):
+    await message.answer(text=f'Привет, {message.chat.username}\nТы можешь ознакомиться с личным сайтом автора по ссылке')
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(types.KeyboardButton(
-        text='Открыть страницу анкеты', web_app=WebAppInfo(url='https://egorskvor.github.io')))
+        text='Открыть страницу cайта', web_app=WebAppInfo(url='https://egorskvor.github.io')))
     await message.answer(text='Жми кнопку', reply_markup=markup)
 
 
