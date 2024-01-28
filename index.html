@@ -3,31 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
-    <title>Anket</title>
+    <title>Сайт</title>
 </head>
-<body>
-    <!-- <form class="decor">
-        <div class="form-left-decoration"></div>
-        <div class="form-right-decoration"></div>
-        <div class="circle"></div>
-        <div class="form-inner">
-        <h3>Написать нам</h3>
-        <input id="fio" type="text" placeholder="ФИО">
-        <input id="napr" type="text" placeholder="Направление обучения">
-        <input id="age" type="text" placeholder="Дата рождения">
-        <textarea id="whyYou" placeholder="Почему именно ты должен попасть на   посвИАт?" rows="3"></textarea>
-        <button id="order" class="but" type="submit">Отправить</button>
+<header>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown" >
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a class="navbar-text" href="#">Active</a></li>
+                            <li><a class="navbar-text" href="#">Item</a></li>
+                            <li><a class="navbar-text" href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
         </div>
-        </form>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="app.js"></script> -->
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 class="uk-card-title">Default</h3>
-        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </nav>
+</header>
+<body>
+    <div class="uk-container">
+        <div class="uk-card uk-card-default uk-width-1-1" style="margin-top: 25px; margin-bottom: 25px;">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-border-circle" width="100" height="40" src="./content/IMG_6343 2.png" alt="Avatar">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Скворцов Егор</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Январь 29, 2024</time></p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+                <p>Пример личного сайта для абитуриентов</p>
+            </div>
+        </div>
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid style="margin-bottom: 25px;">
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">2004 - 2011</h3>
+                    <p>Ясли</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">2011 - 2022</h3>
+                    <p>Школа</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">2022 - наши дни</h3>
+                    <p>Российский университет дружбы народов, инженерная академия</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </body>
+<footer>
+    <div style="background: black;">
+        <div class="uk-container">
+            <div class="uk-column-1-2@s" style="margin-bottom: 25px">
+                <div>
+                    <p>
+                        <h3 class="uk-heading-divider" style="color: whitesmoke">Социальные сети</h3>
+                        <a class="uk-link-muted" href="https://github.com/EgorSKvor">https://github.com/EgorSKvor</a><br>
+                        <a class="uk-link-muted" href="https://t.me/skvortsov_IT">https://t.me/skvortsov_IT</a>
+                    </p>
+                </div>
+                <div style="margin-top: -1px">
+                    <p>
+                        <h3 class="uk-heading-divider" style="color: whitesmoke">Личные контакты</h3>
+                        <a href="" class="uk-link-muted" uk-icon="phone">+7 (999) 999-99-99 </a><br>
+                        <a href="" class="uk-link-muted" uk-icon="mail">skvortsov_IT@email.com </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
 </html>
